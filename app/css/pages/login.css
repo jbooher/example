@@ -1,5 +1,12 @@
 /* Login Page Styles Here */
 .page-login {
+  background: repeating-linear-gradient(
+    135deg,
+    #4B9ED0,
+    #4B9ED0 2px,
+    #4699CE 1px,
+    #4699CE 15px
+  );
   text-align: center;
 }
 
@@ -25,17 +32,9 @@
 }
 
 .email-signup__input {
-  padding: 5px 0 5px 5px;
   color: #fff;
   margin: 20px 0;
-  width: 100%;
-  background-color: transparent;
-  border: none;
   border-bottom: 1px solid #fff;
-}
-
-.email-signup__input:focus {
-  outline: none;
 }
 
 .email-signup__submit {
@@ -51,12 +50,8 @@
   position: relative;
   background-color: #fff;
   color: #0d9bd3;
-  border-radius: 30px;
   margin: 20px auto;
-  height: 60px;
-  width: 100%;
   font-size: 18px;
-  text-transform: uppercase;
   font-weight: bold;
 }
 

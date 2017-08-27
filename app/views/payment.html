@@ -11,7 +11,78 @@
   </head>
   <body class="page-payment page">
     <div class="page-payment__container container">
-      Payment        
+      <div class="payment-info">
+        <div class="payment-info__header">
+          <div class="payment-info__image-container">
+            <img src="../assets/icons/icon-white-payment.svg" class="payment-info__image">
+          </div>
+          <h2 class="payment-info__title">Payment Information</h2>
+        </div>
+        
+        <div class="payment-info__content">
+          <div class="payment-info__name">James Johnson</div>
+          <div class="payment-info__cc-info-container">
+            <div class="payment-info__cc-image-container">
+              <img src="../assets/credit_cards/cc-visa.png" class="payment-info__cc-image">
+            </div>
+            <div class="payment-info__cc-info">
+              <div class="payment-info__cc-number">
+                **** **** **** 3456
+              </div>
+              <div class="payment-info__cc-expiration">
+                Expires: 02/2021
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>      
+      <div class="billing-info">
+        <div class="billing-info__header">
+          <div class="billing-info__image-container">
+            <img src="../assets/icons/icon-white-profile.svg" class="billing-info__image">
+          </div>
+          <h2 class="billing-info__title">Billing Information</h2>
+        </div>
+        <form action="/billing-info-update" class="billing-info__form">
+          <div class="billing-info__form-item">
+            <label for="address1" class="billing-info__label">Address 1</label>
+            <input type="text" id="address1" value="4502 Ribbon Ln" class="billing-info__input">
+          </div>
+          <div class="billing-info__form-item">
+            <label for="address2" class="billing-info__label">Address 2</label>
+            <input type="text" id="address2" class="billing-info__input">
+          </div>
+          <div class="billing-info__form-item">
+            <label for="zip" class="billing-info__label">Zip</label>
+            <input type="text" id="zip" value="97211" class="billing-info__input">
+          </div>
+          <div class="billing-info__form-item">
+            <label for="city" class="billing-info__label">City</label>
+            <input type="text" id="city" value="Boise" class="billing-info__input">
+          </div>
+          <div class="billing-info__form-item">
+            <label for="state" class="billing-info__label">State</label>
+            <input type="text" id="state" value="Idaho" class="billing-info__input">
+          </div>
+          <button type="submit" id="update-payment" 
+                 value="Update Payment Method" class="billing-info__update button">
+            <div class="billing-info__update-text">Update Payment Method</div>
+            <img src="../assets/icons/icon-white-lock.svg" class="billing-info__update-image">
+          </button>
+          <input type="submit" id="delete-payment" 
+                 value="Delete Payment Method" class="billing-info__delete button">
+          <div class="billing-info__default-container">
+              <div class="billing-info__default">
+                <input type="checkbox" id="billing-checkbox" class="billing-info__checkbox" checked>
+                <label for="billing-checkbox" class="billing-info__checkbox-label"></label>
+              </div>
+              <label for="billing-checkbox" class="billing-info__checkbox-label-text">
+                Set as Default Payment Method
+              </label>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>

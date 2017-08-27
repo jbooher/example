@@ -1,1 +1,171 @@
-/* Payment Menu Styles Here */
+/* Payment Page Styles Here */
+.page-payment {
+  color: #666;
+}
+
+.payment-info__header,
+.billing-info__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.payment-info__image-container,
+.billing-info__image-container {
+  background-color: #0d9bd3;
+  padding: 5px;
+  border-radius: 50%;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.payment-info__title,
+.billing-info__title {
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: #0d9bd3;
+  font-size: 12px;
+}
+
+/* Payment Info Styles Here */
+.payment-info {
+  margin-bottom: 20px;
+}
+
+.payment-info__name {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.payment-info__cc-info-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.payment-info__cc-image-container {
+  width: 50px;
+}
+
+.payment-info__cc-image {
+  width: 100%;
+}
+
+.payment-info__cc-info {
+  margin-left: 15px;
+  font-size: 12px;  
+}
+
+/* Billing Info Styles Here */
+.billing-info {
+  position: relative;
+}
+
+.billing-info__form-item {
+  margin-top: 20px;
+}
+
+.billing-info__label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.billing-info .billing-info__input {
+  border-bottom-color: #666;
+  color: #BABBBB;
+  font-size: 18px;
+  padding-bottom: 2px;
+}
+
+.billing-info__update,
+.billing-info__delete {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.billing-info__update {
+  margin-top: 40px;
+  background: #0d9bd3;
+  position: relative;
+}
+
+.billing-info__update-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+}
+
+.billing-info__update-image {
+  width: 20px;
+  position: absolute;
+  top: 45%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
+.billing-info__delete {
+  margin-bottom: 40px;
+}
+
+/* Slider Styles */
+.billing-info__default-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.billing-info__default {
+  display: inline-block;
+  position: relative; 
+  width: 50px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.billing-info__checkbox {
+  display: none;
+}
+
+.billing-info__checkbox-label {
+  align-self: center;
+  display: block; overflow: hidden; cursor: pointer;
+  height: 25px; padding: 0; line-height: 36px;
+  border: 2px solid #666; border-radius: 36px;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease-in;
+}
+
+.billing-info__checkbox-label:before {
+  content: "";
+  display: block; width: 25px; margin: 0px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 21px;
+  border: 2px solid #666; border-radius: 36px;
+  transition: all 0.3s ease-in 0s; 
+}
+
+.billing-info__checkbox:checked + .billing-info__checkbox-label {
+  background-color: #0C7EAC;
+}
+
+.billing-info__checkbox:checked + .billing-info__checkbox-label, .billing-info__checkbox:checked + .billing-info__checkbox-label:before {
+ border-color: #0C7EAC;
+}
+
+.billing-info__checkbox:checked + .billing-info__checkbox-label:before {
+  right: 0px;
+}
+
+.billing-info__checkbox-label-text {
+  margin-left: 10px;
+  font-size: 14px;
+}
