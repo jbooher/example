@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+.top-nav__back-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .top-nav__back {
   width: 20px;
   margin-left: 10px;
@@ -76,7 +82,8 @@
 }
 
 .footer-nav__icon {
-  position:relative;
+  display: block;
+  position: relative;
 }
 
 .footer-nav__image {
