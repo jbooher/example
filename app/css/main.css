@@ -1,0 +1,23 @@
+/* Site-Wide Styles Here */
+a {
+  text-decoration: none;
+}
+
+.page {
+  background: repeating-linear-gradient(
+    135deg,
+    #4B9ED0,
+    #4B9ED0 2px,
+    #4699CE 1px,
+    #4699CE 15px
+  );
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100vh;
+}

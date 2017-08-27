@@ -1,0 +1,73 @@
+/* Login Page Styles Here */
+.page-login {
+  text-align: center;
+}
+
+/* Header Styles */
+.main-header{
+  margin: 40px 0 20px;
+}
+
+.main-header__tagline {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  margin: 20px 0 60px;
+}
+
+/* Email Form Styles */
+.email-signup__form {
+  position: relative;
+}
+.email-signup__label {
+  display: block;
+  text-align: left;
+}
+
+.email-signup__input {
+  padding: 5px 0 5px 5px;
+  color: #fff;
+  margin: 20px 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.email-signup__input:focus {
+  outline: none;
+}
+
+.email-signup__submit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(25%, -25%);
+}
+
+/* Call To Action Styles */
+.call-to-action {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  color: #0d9bd3;
+  border-radius: 30px;
+  margin: 20px auto;
+  height: 60px;
+  width: 100%;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.call-to-action__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Styles */
+.footer {
+  margin-top: 40px;
+}
