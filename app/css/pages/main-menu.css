@@ -1,1 +1,94 @@
 /* Main Menu Page Styles Here */
+.page-main-menu {
+  background: #fff;;
+}
+
+/* Top Nav Styles Here */
+.top-nav {
+  background: #0C7DAC;
+  width: 100vw;
+  height: 55px;
+  padding-top: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-nav__back {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.top-nav__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.top-nav__open {
+  position: relative;
+  margin-right: 10px;
+}
+
+.top-nav__hamburger {
+  width: 33px;
+}
+
+.top-nav__notification {
+  right: 5px;
+}
+
+/* Content Styles Here */
+.content {
+  margin-top: 100px;
+  color: #000;
+}
+
+.content__title {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.content__info {
+  font-size: 18px;
+}
+
+/* Footer-Nav Styles Here */
+.footer-nav {
+  background: #fff;
+  border-top: 2px solid #BABBBB;
+  color: #666;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.footer-nav__items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 8px 10px;
+}
+
+.footer-nav__icon {
+  position:relative;
+}
+
+.footer-nav__image {
+  width: 35px;
+}
+
+.footer-nav__notification {
+  top: 5px;
+  right: 15px;
+}
+
+.footer-nav__name {
+  text-transform: uppercase;
+  font-size: 12px;
+}
