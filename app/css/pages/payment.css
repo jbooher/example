@@ -169,3 +169,16 @@
   margin-left: 10px;
   font-size: 14px;
 }
+
+/* Media Queries */
+@media (min-width: 801px) and (max-width: 1000px) {
+  .billing-info__default-container {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1001px) {
+  .billing-info__default-container {
+    justify-content: center;
+  }
+}
