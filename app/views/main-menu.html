@@ -7,19 +7,55 @@
     <link rel="stylesheet" href="../assets/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">    
     <link rel="stylesheet" type="text/css" href="../css/main.css">
-    <link rel="stylesheet" type="text/css" href="../css/pages/main-menu.css">    
+    <link rel="stylesheet" type="text/css" href="../css/pages/hamburger.css">    
+    <link rel="stylesheet" type="text/css" href="../css/pages/main-menu.css">
   </head>
-  <body class="page-main-menu page">
+  <body id="page-main-menu" class="page-main-menu page">
+    <div id="hamburger-menu" class="hamburger-menu">
+      <header class="main-header">
+        <img class="main-header__close" id="hamburger-close" src="../assets/menu/menu-white-close.svg">
+      </header>    
+      <main class="main-menu">
+        <ul class="main-menu__items">
+          <li class="main-menu__item">
+              <a class="main-menu__link" href="main-menu.html">
+                <div class="main-menu__icon">
+                  <img class="main-menu__image" src="../assets/icons/icon-white-email.svg">
+                  <div class="main-menu__notification notification"><p>3</p></div>                
+              </div>
+              <span class="main-menu__text">Messages</span>
+            </a>
+          </li>
+          <li class="main-menu__item">
+            <a href="payment.html" class="main-menu__link">
+              <div class="main-menu__icon">
+                <img class="main-menu__image" src="../assets/menu/menu-white-settings.svg">
+              </div>
+              <span class="main-menu__text">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </main>  
+      <footer class="footer">
+        <div class="footer__state-badge">
+          <img class="footer__state-badge-image" src="../assets/state_badges/white/white-california.png">            
+        </div>
+        <div class="footer__menu">
+          <a href="login.html" class="footer__button">Logout</a>
+          <a href="payment.html" class="footer__button">Feedback</a>
+        </div>
+      </footer>  
+    </div>
     <div class="page-main-menu__container container">
       <header class="top-nav">
         <a href="login.html" class="top-nav__back-link">
           <img class="top-nav__back" src="../assets/menu/menu-white-back.svg">            
         </a>
         <h1 class="top-nav__title">Page Title</h1>
-        <a href="hamburger.html" class="top-nav__open">
+        <div id="hamburger-open" class="top-nav__open">
           <img class="top-nav__hamburger" src="../assets/menu/menu-white-open.svg">
           <div class="top-nav__notification notification"><p>3</p></div>            
-        </a>
+        </div>
       </header>
       <main class="content">
         <h2 class="content__title">Menu Template</h2>
@@ -74,5 +110,6 @@
         </ul>
       </footer>
     </div>
+    <script type="text/javascript" src="../js/main.js"></script>      
   </body>
 </html>

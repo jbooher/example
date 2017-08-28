@@ -1,6 +1,19 @@
 /* Hamburger Page Styles Here */
-.page-hamburger {
+.hamburger-menu {
   background: #0C7EAC;
+  position: absolute;
+  top: 0;
+  transform: translateX(100%);
+  width: 100vw;  
+  z-index: 10;
+  height: 100%;
+  overflow-y: scroll;
+  transition: all 0.3s ease-in;
+}
+
+.hamburger-menu.open {
+  transform: translateX(0);
+  transition: all 0.3s ease-in;   
 }
 
 /* Main Header Styles */
@@ -17,6 +30,7 @@
 
 .main-header__close { 
   float: right;
+  margin-right: 20px;
 }
 
 /* Main Menu Styles */
@@ -66,7 +80,7 @@
 /* Footer Styles */
 .footer__state-badge {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .footer__state-badge-image {
@@ -89,4 +103,5 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  margin: 0 20px;
 }

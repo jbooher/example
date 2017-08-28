@@ -1,6 +1,12 @@
 /* Main Menu Page Styles Here */
 .page-main-menu {
-  background: #fff;;
+  background: #fff;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.page-main-menu.menu-open {
+  overflow: hidden;
 }
 
 /* Top Nav Styles Here */
@@ -74,6 +80,7 @@
   bottom: 0;
   left: 0;
   overflow: hidden;
+  z-index: 1;
 }
 
 .footer-nav__items {
